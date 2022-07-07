@@ -5,7 +5,7 @@ int result =1;
 
 for(int i = 2;i<=N;i++)
 {
-    result=N*result;
+    result=i*result;
 }
 
         Console.WriteLine($"Факториал числа = {result}");
