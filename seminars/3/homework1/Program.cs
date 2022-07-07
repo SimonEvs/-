@@ -1,7 +1,9 @@
 ﻿Console.WriteLine("Введите 5-ти значное число: ");
-string number = Console.ReadLine();
+string number = (Console.ReadLine());
 Console.WriteLine(number);
-if (number[0] == number[4] && number[1]==number[3])
+
+
+if (number[0] == number[4] && number[1] == number[3])
 {
     Console.WriteLine("Да");
 }
@@ -9,6 +11,8 @@ else
 {
     Console.WriteLine("Нет");
 }
+// if (number >99999)
+// { Console.WriteLine("Некорректное число"); }
 // // Console.WriteLine($"Да {number}");
 // bool Palindrom(int number)
 // {
