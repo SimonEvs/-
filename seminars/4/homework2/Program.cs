@@ -1,9 +1,9 @@
 ﻿// Принимает на вход число, выводит сумму цифр в числе
-
+Console.Clear();
+Console.WriteLine("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
-int number1=Convert.ToInt32(number);
+int number1 = Convert.ToInt32(number);
 int count = 0;
-int C = 0;
 while (number != 0)
 {
     number = number / 10;
@@ -11,8 +11,12 @@ while (number != 0)
 }
 Console.WriteLine($"Цифр в числе - {count}");
 
-for (int i = 0; i < count; i++)
+int Y =0;
+int Z = 0;
+while (Y<count)
 {
-    C = C + number1[i];
+    Z = Z + number1 % 10;
+    number1 = number1 / 10;
+    Y++;
 }
-Console.WriteLine(C);
+Console.WriteLine($"Сумма чисел числа равна - {Z}");
