@@ -1,4 +1,5 @@
-﻿Console.Clear();
+﻿//Создать массив и найти число
+Console.Clear();
 int[] array = new int[6];
 int size = array.Length;
 
