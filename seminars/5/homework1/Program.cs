@@ -26,13 +26,13 @@ int[] array = new int[20];
 int size = array.Length;
 int index = 0;
 int count = 0;
-double number = 0;
+double currentNumber = 0;
 
 while (index < size)
 {
     array[index] = new Random().Next(100, 1000);
-    number = array[index];
-    if ((number % 2) == 0)
+    currentNumber = array[index];
+    if ((currentNumber % 2) == 0)
     {
         count++;
     }
