@@ -19,3 +19,10 @@ for (int i = 0; i != size; i++)
 
 Console.WriteLine($"[{String.Join("; ", newArray)}]");
 Console.WriteLine($"Чисел больше 0 :{count}");
+
+//Можно еще написать строчку, которая бы зазывала написать сразу несколько чисел.
+int[] array=Array.ConvertAll(Console.ReadLine().Split(";"),int.Parse);
+
+Console.WriteLine($"[{String.Join(";", array)}]");
+
+int a=Int32.Parse(Console.ReadLine()); 
