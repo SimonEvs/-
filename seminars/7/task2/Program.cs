@@ -13,3 +13,4 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         Console.Write(matrix[i,j]+"\t");
     }
     Console.WriteLine();
+}
