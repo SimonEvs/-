@@ -1,4 +1,7 @@
-﻿Console.Clear();
+﻿//Программа, которая на вход принимает позиции элемента в двумерном массиве,
+// и возвращает значение элемета
+
+Console.Clear();
 Console.WriteLine("Введите количество строк ");
 int rows = Int32.Parse(Console.ReadLine());
 Console.Clear();
