@@ -1,10 +1,12 @@
-﻿Console.WriteLine("Введите количество строк в массивах: ");
+﻿//Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+
+Console.WriteLine("Введите количество строк в массивах: ");
 int rows = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов в массивах:");
 int columns = Convert.ToInt32(Console.ReadLine());
 
 
-
+Console.WriteLine("Первая матрица");
 int[,] matrix1 = new int[rows, columns];
 for (int i = 0; i < rows; i++)
 {
@@ -17,6 +19,7 @@ for (int i = 0; i < rows; i++)
     Console.WriteLine();
 }
 Console.WriteLine();
+Console.WriteLine("Вторая матрица");
 
 int[,] matrix2 = new int[rows, columns];
 for (int i = 0; i < rows; i++)
@@ -29,6 +32,7 @@ for (int i = 0; i < rows; i++)
     Console.WriteLine();
 }
 Console.WriteLine();
+Console.WriteLine("Произведение");
 
 int[,] multiplyArray = new int[rows, columns];
 for (int i = 0; i < rows; i++)
