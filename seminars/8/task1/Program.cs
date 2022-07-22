@@ -53,3 +53,7 @@ void ChangeRows(int[,] matrix)
         matrix[indexLastRow,i]=temp;
     }
 }
+
+ChangeRows(array);
+Console.WriteLine("результат");
+PrintArray(array);
