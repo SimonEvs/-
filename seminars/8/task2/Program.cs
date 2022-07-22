@@ -5,6 +5,10 @@ Console.WriteLine("Введите количество строк массива
 int rows = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов массива:");
 int columns = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите левую грацицу рандома:");
+int minRandom = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите правую грацицу рандома:");
+int maxRandom = Convert.ToInt32(Console.ReadLine());
 
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
