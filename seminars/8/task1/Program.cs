@@ -34,11 +34,22 @@ void PrintArray(int[,] inputArray)
         {
             Console.Write(inputArray[i, j] + "\t");
         }
-            Console.WriteLine();
-        
+        Console.WriteLine();
+
 
     }
 }
 
-int[,]array= GetArray(rows,columns,0,10);
+int[,] array = GetArray(rows, columns, 0, 10);
 PrintArray(array);
+
+void ChangeRows(int[,] matrix)
+{
+    int indexLastRow = matrix.GetLength(0) - 1;
+    for (int i = 0; i < matrix.GetLength(1); i++)
+    {
+        int temp = matrix[0, i];
+        matrix[0, i] = matrix[indexLastRow, i];
+        matrix[indexLastRow,i]=temp;
+    }
+}
