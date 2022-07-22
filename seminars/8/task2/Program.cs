@@ -10,7 +10,11 @@ int minRandom = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите правую грацицу рандома:");
 int maxRandom = Convert.ToInt32(Console.ReadLine());
 
-
+if(rows!=columns)
+{
+    Console.WriteLine("Замена невозможна");
+    return;
+}
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
     int[,] matrix = new int[m, n];
