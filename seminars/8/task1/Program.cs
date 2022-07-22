@@ -10,6 +10,11 @@ int rows = int.Parse(Console.ReadLine());
 //
 Console.WriteLine("Введите количество столбцов массива:");
 int columns = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите левую грацицу рандома:");
+int minRandom = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите правую грацицу рандома:");
+int maxRandom = Convert.ToInt32(Console.ReadLine());
+
 
 ///summary-описание метода(три слэша).
 // m на n (m-количсетво строк,n-количество столбцов).
