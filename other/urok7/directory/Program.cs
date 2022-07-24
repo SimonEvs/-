@@ -1,4 +1,7 @@
-﻿void CatalogInfo(string path, string indent = "")
+﻿//Работа с дерикторием.
+
+
+void CatalogInfo(string path, string indent = "")
 {
     DirectoryInfo catalog = new DirectoryInfo(path);
 
