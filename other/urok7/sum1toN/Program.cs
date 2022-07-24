@@ -15,6 +15,6 @@ int SumRec(int n)
     else return n + SumRec(n - 1);
 
 }
-
+// 
 Console.WriteLine(SumFor(5));
 Console.WriteLine(SumRec(5));
